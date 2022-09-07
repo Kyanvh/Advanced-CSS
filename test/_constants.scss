@@ -1,0 +1,46 @@
+// mixins
+@mixin standard-text(){
+    padding:10px 10px;
+    display:inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: underline;
+}
+@mixin display-flex(){
+    display:flex;
+    align-items: center;
+}
+@mixin before(){
+    padding:10px 10px;
+    font-size: 1.15em;
+}
+
+// mixins portfolio
+@mixin testimonial-text(){
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:300px;
+    background-color: $gray;
+}
+
+@mixin footer(){
+    display:flex;
+    justify-content: center;
+    background-color: $test_blue;
+    width:250px;
+    box-shadow: 0 5px 5px $darkGray;
+}
+
+// variables
+$white: #fff;
+$light-red: #e17b77;
+$ligth-blue: #00aced;
+$icon-blue: #007bb6;
+$dark-blue: #3b5998;
+$black: #333;
+$gray:#c3cfe2;
+$darkGray:gray;
+$test_blue:#686de0;
